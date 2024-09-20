@@ -97,16 +97,16 @@ getgenv().ExunysDeveloperAimbot = {
 	},
 
 	Settings = {
-		Enabled = getgenv().AimbotEnabled,
+		Enabled = true,
 
 		TeamCheck = false,
 		AliveCheck = true,
-		WallCheck = getgenv().WallCheckEnabled,
+		WallCheck = false,
 
 		OffsetToMoveDirection = false,
 		OffsetIncrement = 15,
 
-		Sensitivity =  getgenv().SmoothingSlider, -- Animation length (in seconds) before fully locking onto target
+		Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
 		Sensitivity2 = 3.5, -- mousemoverel Sensitivity
 
 		LockMode = 1, -- 1 = CFrame; 2 = mousemoverel
@@ -117,19 +117,19 @@ getgenv().ExunysDeveloperAimbot = {
 	},
 
 	FOVSettings = {
-		Enabled = getgenv().FovEnabled,
-		Visible =  getgenv().FovVisible,
+		Enabled = true,
+		Visible = FovVisible,
 
-		Radius = getgenv().FovSlider,
+		Radius = 90,
 		NumSides = 60,
 
-		Thickness = getgenv().FovThickness,
-		Transparency = getgenv().FovTransparency,
-		Filled = getgenv().FovFilled,
+		Thickness = 1,
+		Transparency = 1,
+		Filled = false,
 
-		RainbowColor =  false,
+		RainbowColor = false,
 		RainbowOutlineColor = false,
-		Color =  getgenv().FovColor,
+		Color = Color3fromRGB(255, 255, 255),
 		OutlineColor = Color3fromRGB(0, 0, 0),
 		LockedColor = Color3fromRGB(255, 150, 150)
 	},
